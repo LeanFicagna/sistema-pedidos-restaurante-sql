@@ -3,6 +3,7 @@
 Repositório contendo o **modelo lógico e físico** de um sistema de gestão de pedidos para restaurante.  
 Inclui **DER**, scripts de **criação de tabelas normalizadas**, além de exemplos de **inserções, consultas, atualizações e exclusões** utilizando SQL.
 
+Obs: Apesar de não ser pedido os arquivos DDL, optou-se por incluir para facilitar a correção da atividade.
 ---
 
 ## 📁 Estrutura do Repositório
