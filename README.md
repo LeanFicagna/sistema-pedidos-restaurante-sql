@@ -59,5 +59,5 @@ O banco foi projetado seguindo os princípios de normalização **1FN, 2FN e 3FN
 - Relacionamentos 1:N e N:N corretamente implementados;
 - Integridade referencial preservada.
 
-
+![texto alternativo](https://github.com/LeanFicagna/sistema-pedidos-restaurante-sql/blob/main/diagrama.png)
 ---
