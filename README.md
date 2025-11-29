@@ -4,7 +4,6 @@ Repositório contendo o **modelo lógico e físico** de um sistema de gestão de
 Inclui **DER**, scripts de **criação de tabelas normalizadas**, além de exemplos de **inserções, consultas, atualizações e exclusões** utilizando SQL.
 
 Obs: Apesar de não ser pedido os arquivos DDL, optou-se por incluir para facilitar a correção da atividade.
----
 
 ## 📁 Estrutura do Repositório
 
@@ -14,7 +13,7 @@ Arquivo responsável por:
 - Criar todas as tabelas normalizadas (Cliente, Mesa, Garçom, Produto, Pedido e ItemPedido);
 - Definir chaves primárias, estrangeiras e restrições.
 
----
+
 
 ### 📌 [`inserts.sql`](./inserts.sql)  
 Contém os comandos de povoamento inicial das tabelas:
@@ -22,7 +21,7 @@ Contém os comandos de povoamento inicial das tabelas:
 - Inserção de produtos do cardápio;
 - Criação de pedidos e itens do pedido.
 
----
+
 
 ### 📌 [`selects.sql`](./selects.sql)  
 Arquivo com consultas SQL utilizadas para análise de dados, incluindo:
@@ -32,7 +31,7 @@ Arquivo com consultas SQL utilizadas para análise de dados, incluindo:
 - Limitação de resultados (`LIMIT`);
 - Consultas para relatórios simples.
 
----
+
 
 ### 📌 [`updates_deletes.sql`](./updates_deletes.sql)  
 Arquivo contendo:
@@ -41,13 +40,88 @@ Arquivo contendo:
 
 ---
 
-## 🧩 Tecnologias Utilizadas
+## 🚀 Instruções de Execução
 
-- **MySQL**
-- **DBeaver**
-- **SQL (DDL + DML)**
-  - DDL para criação do esquema  
-  - DML para inserções, consultas, atualizações e exclusões
+Siga os passos abaixo para criar o banco de dados, popular tabelas e testar funcionalidades do sistema.
+
+### 🔧 1. Criar o banco de dados e as tabelas
+
+Execute o arquivo:
+
+```
+squema.sql
+```
+
+Este script irá:
+
+- Criar o banco `restaurante_db`;
+- Criar todas as tabelas normalizadas;
+- Definir chaves primárias, estrangeiras e restrições.
+
+**Como executar (DBeaver / MySQL Workbench):**
+1. Abra o arquivo `squema.sql`;
+2. Selecione todo o conteúdo;
+3. Clique em **Run** (▶).
+
+
+
+### 🍽️ 2. Inserir os dados iniciais
+
+Execute o arquivo:
+
+```
+inserts.sql
+```
+
+Ele irá povoar o banco com:
+
+- Clientes, mesas e garçons;
+- Produtos do cardápio;
+- Pedidos e itens do pedido.
+
+
+
+### 🔍 3. Executar as consultas
+
+Execute o arquivo:
+
+```
+selects.sql
+```
+
+Inclui consultas com:
+
+- JOINs;
+- WHERE;
+- ORDER BY;
+- LIMIT;
+- Relatórios de pedidos.
+
+
+
+### ✏️ 4. Executar Updates e Deletes
+
+Execute:
+
+```
+updates_deletes.sql
+```
+
+Contém:
+
+- 3 comandos **UPDATE**
+- 4 comandos **DELETE**
+
+Todos preparados para preservar integridade referencial.
+
+
+
+### 🧪 5. Ambiente recomendado
+
+- **MySQL 8.x**
+- **DBeaver** ou **MySQL Workbench**
+- Codificação: `UTF-8`
+- Engine: `InnoDB`
 
 ---
 
